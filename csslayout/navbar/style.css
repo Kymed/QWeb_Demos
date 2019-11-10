@@ -1,0 +1,72 @@
+/* get rid of some default css,
+   set box-sizing to border box (width & height INCLUDES border & padding sizes)
+   set default font to Roboto (backup sans-serif) with 1.5em lineheight
+*/
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.5em;
+    color: #000;
+    background: #fff;
+}
+
+/* get rid of some default css on a and psuedo classes
+*/
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+/* create the navbar fit the width of the screen and own a flexbox
+*/
+.navbar {
+    width: 100%;
+    background-color: #D90368;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 15px hsla(0,0%,0%,.4);
+}
+
+/* push the brand to the left
+*/
+.brand {
+    margin-right: auto;
+    font-size: 24px;
+    margin-left: 24px;
+    color: #E8E6EB;
+}
+
+/* push the navs to the right
+*/
+.navs {
+    margin-left: auto;
+    height: 100%;
+    margin: 0 6px 0 6px;
+    font-weight: 1000;
+    display: flex;
+    flex-direction: row;
+}
+
+/* create the individual nav, center it, use flexbox
+   for vertical centering.
+*/
+.nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100px;
+}
